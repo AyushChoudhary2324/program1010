@@ -12,11 +12,11 @@ pool:
 steps:
 - task: Maven@3
   inputs:
-    mavenPomFile: 'program1010/program10/myapp/pom.xml'
+    mavenPomFile: 'myapp/pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.17'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'clean package'
+    goals: 'clean goal package'
